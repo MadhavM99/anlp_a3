@@ -1,0 +1,134 @@
+{
+  "transformer": {
+    "params": 4753179,
+    "forward_flops_per_window": 671078400,
+    "counted_matmul_flops": 671078400,
+    "analytic_extra_flops": 0,
+    "window_tokens": 68,
+    "lr": 0.0008,
+    "best_step": 8000,
+    "best_val_loss": 2.856681810209658,
+    "train_minutes": 5.544304100672404,
+    "validation": {
+      "char_accuracy": 0.172188615252221,
+      "word_accuracy": 0.002992220227408737,
+      "precision": 0.4753105031033287,
+      "recall": 0.04129403755938269,
+      "f1": 0.019124939813961135,
+      "levenshtein_mean": 327.02,
+      "levenshtein_normalized": 0.7735152396598874,
+      "docs": 100,
+      "chars": 39509
+    },
+    "test": {
+      "char_accuracy": 0.17803396382714345,
+      "word_accuracy": 0.002890173410404624,
+      "precision": 0.465090624647565,
+      "recall": 0.041226945288033355,
+      "f1": 0.01938841928504506,
+      "levenshtein_mean": 357.16,
+      "levenshtein_normalized": 0.7700672360738307,
+      "docs": 100,
+      "chars": 43458
+    }
+  },
+  "mamba": {
+    "params": 4811931,
+    "forward_flops_per_window": 673201152,
+    "counted_matmul_flops": 643433472,
+    "analytic_extra_flops": 29767680,
+    "window_tokens": 68,
+    "lr": 0.0003,
+    "best_step": 8000,
+    "best_val_loss": 2.846963970408427,
+    "train_minutes": 16.724251027901968,
+    "validation": {
+      "char_accuracy": 0.17727606368169277,
+      "word_accuracy": 0.0058348294434470375,
+      "precision": 0.7404187784062803,
+      "recall": 0.04895782185704145,
+      "f1": 0.03422459723120683,
+      "levenshtein_mean": 325.04,
+      "levenshtein_normalized": 0.6603410398658269,
+      "docs": 100,
+      "chars": 39509
+    },
+    "test": {
+      "char_accuracy": 0.18362556951539416,
+      "word_accuracy": 0.0076195480819758275,
+      "precision": 0.6816474767264098,
+      "recall": 0.047517766591933665,
+      "f1": 0.031776690908552896,
+      "levenshtein_mean": 354.77,
+      "levenshtein_normalized": 0.6253878283782387,
+      "docs": 100,
+      "chars": 43458
+    }
+  },
+  "deltanet": {
+    "params": 4778163,
+    "forward_flops_per_window": 740493312,
+    "counted_matmul_flops": 731056128,
+    "analytic_extra_flops": 9437184,
+    "window_tokens": 68,
+    "lr": 0.0008,
+    "best_step": 8500,
+    "best_val_loss": 2.8506484854779854,
+    "train_minutes": 12.521081447601318,
+    "validation": {
+      "char_accuracy": 0.17603583993520464,
+      "word_accuracy": 0.005385996409335727,
+      "precision": 0.7134534128823624,
+      "recall": 0.0468338555679539,
+      "f1": 0.03004626646134952,
+      "levenshtein_mean": 325.54,
+      "levenshtein_normalized": 0.693753073036209,
+      "docs": 100,
+      "chars": 39509
+    },
+    "test": {
+      "char_accuracy": 0.18242901191955452,
+      "word_accuracy": 0.006568575932737782,
+      "precision": 0.6544539175147912,
+      "recall": 0.04608417859783769,
+      "f1": 0.028927032931810488,
+      "levenshtein_mean": 355.3,
+      "levenshtein_normalized": 0.6497361660634504,
+      "docs": 100,
+      "chars": 43458
+    }
+  },
+  "hybrid": {
+    "params": 4795047,
+    "forward_flops_per_window": 706847232,
+    "counted_matmul_flops": 687244800,
+    "analytic_extra_flops": 19602432,
+    "window_tokens": 68,
+    "lr": 0.0003,
+    "best_step": 9000,
+    "best_val_loss": 2.8476429400322902,
+    "train_minutes": 14.515535354614258,
+    "validation": {
+      "char_accuracy": 0.17783289883317724,
+      "word_accuracy": 0.0058348294434470375,
+      "precision": 0.7630030603033788,
+      "recall": 0.049026866695641,
+      "f1": 0.03435416197194337,
+      "levenshtein_mean": 324.83,
+      "levenshtein_normalized": 0.6498011578016778,
+      "docs": 100,
+      "chars": 39509
+    },
+    "test": {
+      "char_accuracy": 0.18385567674536335,
+      "word_accuracy": 0.008013662637940094,
+      "precision": 0.6686117295737662,
+      "recall": 0.047620823982904986,
+      "f1": 0.031981598328434085,
+      "levenshtein_mean": 354.67,
+      "levenshtein_normalized": 0.6217441772618598,
+      "docs": 100,
+      "chars": 43458
+    }
+  }
+}

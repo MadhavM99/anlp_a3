@@ -1,0 +1,74 @@
+{
+  "transformer": {
+    "params": 4753179,
+    "forward_flops_per_window": 671078400,
+    "counted_matmul_flops": 671078400,
+    "analytic_extra_flops": 0,
+    "window_tokens": 68,
+    "test": {
+      "char_accuracy": 0.17102849038345022,
+      "word_accuracy": 0.0013971253392300734,
+      "precision": 0.4665559374179744,
+      "recall": 0.038922462756619376,
+      "f1": 0.01451948965670332,
+      "levenshtein_mean": 737.02124430956,
+      "levenshtein_normalized": 0.7919703916286505,
+      "docs": 1318,
+      "chars": 1171834
+    }
+  },
+  "mamba": {
+    "params": 4811931,
+    "forward_flops_per_window": 673201152,
+    "counted_matmul_flops": 643433472,
+    "analytic_extra_flops": 29767680,
+    "window_tokens": 68,
+    "test": {
+      "char_accuracy": 0.1736918368984003,
+      "word_accuracy": 0.0034224545180420144,
+      "precision": 0.7774790507757822,
+      "recall": 0.04261535202143131,
+      "f1": 0.021875897419142695,
+      "levenshtein_mean": 734.6593323216996,
+      "levenshtein_normalized": 0.6759848904221419,
+      "docs": 1318,
+      "chars": 1171834
+    }
+  },
+  "deltanet": {
+    "params": 4778163,
+    "forward_flops_per_window": 740493312,
+    "counted_matmul_flops": 731056128,
+    "analytic_extra_flops": 9437184,
+    "window_tokens": 68,
+    "test": {
+      "char_accuracy": 0.1731030162975302,
+      "word_accuracy": 0.002924917077093175,
+      "precision": 0.7056380277939512,
+      "recall": 0.04176365023798118,
+      "f1": 0.020181351566724914,
+      "levenshtein_mean": 735.1813353566009,
+      "levenshtein_normalized": 0.6976827464978187,
+      "docs": 1318,
+      "chars": 1171834
+    }
+  },
+  "hybrid": {
+    "params": 4795047,
+    "forward_flops_per_window": 706847232,
+    "counted_matmul_flops": 687244800,
+    "analytic_extra_flops": 19602432,
+    "window_tokens": 68,
+    "test": {
+      "char_accuracy": 0.17376949294865995,
+      "word_accuracy": 0.0036285053774248667,
+      "precision": 0.7222376308506576,
+      "recall": 0.04241218038963845,
+      "f1": 0.021476426711299085,
+      "levenshtein_mean": 734.5773899848255,
+      "levenshtein_normalized": 0.6695148429116069,
+      "docs": 1318,
+      "chars": 1171834
+    }
+  }
+}
