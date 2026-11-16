@@ -1,0 +1,24 @@
+dataset: gossipcop
+data_root: data/part2
+seeds: [0, 1, 2, 3, 4]
+epochs: 100
+batch_size: 128
+lr: 0.005
+weight_decay: 0.01
+hidden: 128
+dropout: 0.5
+average: macro
+standardize: true
+gat_heads: 8
+gat_dropout: 0.6
+bigcn_edge_drop: 0.2
+architecture:
+  feature: bert
+  models: [sage]
+ablation:
+  model: sage
+  features: [content]
+template: results/part2/results_template.json
+output_dir: logs/part2/check/output
+results_dir: logs/part2/check/results
+checkpoint_dir: logs/part2/check/models

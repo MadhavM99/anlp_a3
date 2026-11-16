@@ -1,0 +1,6 @@
+base: config/part2/gnn.yaml
+seeds: [0, 1, 2]
+grid:
+  lr: [0.0005, 0.001, 0.005]
+  weight_decay: [0.0001, 0.01]
+output: results/part2/sweep.json
