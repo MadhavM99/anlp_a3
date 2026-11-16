@@ -1,0 +1,46 @@
+seed: 0
+roll_number: "2026900003"
+data_root: data/part1
+heldout_path: data/part1/heldout
+max_docs: 100000
+val_max_docs: 1000
+patch: 64
+context: 4
+batch_size: 16
+eval_batch_size: 64
+workers: 0
+max_steps: 10000
+lr:
+  transformer: 0.0008
+  deltanet: 0.0008
+  mamba: 0.0003
+  hybrid: 0.0003
+warmup_steps: 500
+weight_decay: 0.01
+grad_clip: 1.0
+label_smoothing: 0.1
+amp: true
+log_interval: 50
+eval_interval: 500
+eval_limit: 60
+final_eval: true
+eval_max_docs: 100
+eval_max_chunks: 16
+eval_max_minutes: 8
+eval_splits: [validation, test]
+models: [transformer, mamba, deltanet, hybrid]
+inference_model: mamba
+model:
+  d_model: 256
+  n_layers: 6
+  n_heads: 4
+  d_ff: 1024
+  dropout: 0.1
+  d_state: 8
+  d_conv: 4
+  mamba_d_inner: 960
+  delta_chunk: 32
+hf_repo: mdhvm/anlp-a3-part1
+checkpoint_dir: models/part1
+results_dir: results/part1
+output_dir: output/part1
