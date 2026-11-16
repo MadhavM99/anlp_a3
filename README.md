@@ -27,7 +27,7 @@ bash ./scripts/part2/test_gnn.sh
 bash ./scripts/part2/test_gnn.sh --ta
 bash ./scripts/part2/log_wandb.sh
 bash ./scripts/part2/log_wandb.sh --mode best
-uv run python -m src.part2.push_hf --repo <hf-username>/anlp-a3-part2
+uv run python -m src.part2.push_hf --repo mdhvm/anlp-a3-part2
 ```
 
 ### Kaggle GPU
