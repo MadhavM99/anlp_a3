@@ -1,0 +1,192 @@
+{
+  "delta_rule_max_abs_error": {
+    "5": 1.7881393432617188e-07,
+    "32": 5.960464477539062e-07,
+    "68": 7.748603820800781e-07
+  },
+  "models": {
+    "transformer": {
+      "params": 4753179,
+      "leak_before_40": 0.0,
+      "change_from_40": 0.7887527942657471,
+      "layout": [
+        "attention",
+        "attention",
+        "attention",
+        "attention",
+        "attention",
+        "attention"
+      ]
+    },
+    "mamba": {
+      "params": 4811931,
+      "leak_before_40": 0.0,
+      "change_from_40": 1.0606948137283325,
+      "layout": [
+        "mamba",
+        "mamba",
+        "mamba",
+        "mamba",
+        "mamba",
+        "mamba"
+      ]
+    },
+    "deltanet": {
+      "params": 4778163,
+      "leak_before_40": 0.0,
+      "change_from_40": 0.716139554977417,
+      "layout": [
+        "deltanet",
+        "deltanet",
+        "deltanet",
+        "deltanet",
+        "deltanet",
+        "deltanet"
+      ]
+    },
+    "hybrid": {
+      "params": 4795047,
+      "leak_before_40": 0.0,
+      "change_from_40": 0.6890414953231812,
+      "layout": [
+        "mamba",
+        "deltanet",
+        "mamba",
+        "deltanet",
+        "mamba",
+        "deltanet"
+      ]
+    }
+  },
+  "smoke_minutes": 0.6470650355021159,
+  "smoke_summary": {
+    "transformer": {
+      "params": 4753179,
+      "forward_flops_per_window": 671078400,
+      "counted_matmul_flops": 671078400,
+      "analytic_extra_flops": 0,
+      "window_tokens": 68,
+      "best_step": 20,
+      "best_val_loss": 2.9528999750399456,
+      "train_minutes": 0.022308329741160076,
+      "validation": {
+        "char_accuracy": 0.1656792504822265,
+        "word_accuracy": 0.0,
+        "precision": 0.045703385174748985,
+        "recall": 0.036995751661463766,
+        "f1": 0.011911275302029223,
+        "levenshtein_mean": 603.35,
+        "levenshtein_normalized": 0.8738123962248853,
+        "docs": 20,
+        "chars": 14516
+      },
+      "test": {
+        "char_accuracy": 0.17416428937166265,
+        "word_accuracy": 0.0,
+        "precision": 0.010092772563712523,
+        "recall": 0.03708332961526427,
+        "f1": 0.012677726178046625,
+        "levenshtein_mean": 561.45,
+        "levenshtein_normalized": 0.8418927645095365,
+        "docs": 20,
+        "chars": 13671
+      }
+    },
+    "mamba": {
+      "params": 4811931,
+      "forward_flops_per_window": 679468032,
+      "counted_matmul_flops": 649700352,
+      "analytic_extra_flops": 29767680,
+      "window_tokens": 68,
+      "best_step": 20,
+      "best_val_loss": 3.2426399594944764,
+      "train_minutes": 0.2617318868637085,
+      "validation": {
+        "char_accuracy": 0.07942959492973271,
+        "word_accuracy": 0.0016319869441044472,
+        "precision": 0.03751496185940305,
+        "recall": 0.036982154980334844,
+        "f1": 0.03362416433113736,
+        "levenshtein_mean": 588.15,
+        "levenshtein_normalized": 0.8718755751484817,
+        "docs": 20,
+        "chars": 14516
+      },
+      "test": {
+        "char_accuracy": 0.08368078414161363,
+        "word_accuracy": 0.00041254125412541255,
+        "precision": 0.03732176993691683,
+        "recall": 0.035838540733664326,
+        "f1": 0.03377471212689876,
+        "levenshtein_mean": 548.85,
+        "levenshtein_normalized": 0.8767848693591149,
+        "docs": 20,
+        "chars": 13671
+      }
+    },
+    "deltanet": {
+      "params": 4778163,
+      "forward_flops_per_window": 740493312,
+      "counted_matmul_flops": 731056128,
+      "analytic_extra_flops": 9437184,
+      "window_tokens": 68,
+      "best_step": 20,
+      "best_val_loss": 3.2988889052529036,
+      "train_minutes": 0.02935167948404948,
+      "validation": {
+        "char_accuracy": 0.04601818682832736,
+        "word_accuracy": 0.0024479804161566705,
+        "precision": 0.037270962285471075,
+        "recall": 0.036123848451931236,
+        "f1": 0.03259273310230421,
+        "levenshtein_mean": 630.6,
+        "levenshtein_normalized": 0.8956010695654516,
+        "docs": 20,
+        "chars": 14516
+      },
+      "test": {
+        "char_accuracy": 0.04330334284251335,
+        "word_accuracy": 0.0024752475247524753,
+        "precision": 0.03649865749915046,
+        "recall": 0.033183613291376986,
+        "f1": 0.03133627372496718,
+        "levenshtein_mean": 596.2,
+        "levenshtein_normalized": 0.9368497642924055,
+        "docs": 20,
+        "chars": 13671
+      }
+    },
+    "hybrid": {
+      "params": 4795047,
+      "forward_flops_per_window": 709980672,
+      "counted_matmul_flops": 690378240,
+      "analytic_extra_flops": 19602432,
+      "window_tokens": 68,
+      "best_step": 20,
+      "best_val_loss": 3.2935427135755706,
+      "train_minutes": 0.11302067438761393,
+      "validation": {
+        "char_accuracy": 0.052080462937448335,
+        "word_accuracy": 0.0024479804161566705,
+        "precision": 0.03757871228820462,
+        "recall": 0.036511655228965496,
+        "f1": 0.03360553611314579,
+        "levenshtein_mean": 620.9,
+        "levenshtein_normalized": 0.8884260341144158,
+        "docs": 20,
+        "chars": 14516
+      },
+      "test": {
+        "char_accuracy": 0.05222734254992319,
+        "word_accuracy": 0.0020627062706270625,
+        "precision": 0.0361124597645736,
+        "recall": 0.0433918206366616,
+        "f1": 0.03323609502356535,
+        "levenshtein_mean": 581.65,
+        "levenshtein_normalized": 0.9091896043661126,
+        "docs": 20,
+        "chars": 13671
+      }
+    }
+  }
+}

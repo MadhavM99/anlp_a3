@@ -1,0 +1,130 @@
+{
+  "transformer": {
+    "params": 4753179,
+    "forward_flops_per_window": 671078400,
+    "counted_matmul_flops": 671078400,
+    "analytic_extra_flops": 0,
+    "window_tokens": 68,
+    "best_step": 1500,
+    "best_val_loss": 2.8613268694499188,
+    "train_minutes": 0.8646267493565877,
+    "validation": {
+      "char_accuracy": 0.16795442489102105,
+      "word_accuracy": 0.0006166495375128469,
+      "precision": 0.086623998869903,
+      "recall": 0.037460264037042786,
+      "f1": 0.011538094566376793,
+      "levenshtein_mean": 721.48,
+      "levenshtein_normalized": 0.8675156361845826,
+      "docs": 100,
+      "chars": 86714
+    },
+    "test": {
+      "char_accuracy": 0.17496918280037707,
+      "word_accuracy": 0.0008960573476702509,
+      "precision": 0.0903500108374459,
+      "recall": 0.037524252207440774,
+      "f1": 0.01207774986498319,
+      "levenshtein_mean": 682.6,
+      "levenshtein_normalized": 0.860151319959424,
+      "docs": 100,
+      "chars": 82746
+    }
+  },
+  "mamba": {
+    "params": 4811931,
+    "forward_flops_per_window": 673201152,
+    "counted_matmul_flops": 643433472,
+    "analytic_extra_flops": 29767680,
+    "window_tokens": 68,
+    "best_step": 1500,
+    "best_val_loss": 2.853762982598865,
+    "train_minutes": 2.6272681673367817,
+    "validation": {
+      "char_accuracy": 0.17006481075720184,
+      "word_accuracy": 0.0017129153819801302,
+      "precision": 0.5633305198066212,
+      "recall": 0.039617104094076455,
+      "f1": 0.01583211702972608,
+      "levenshtein_mean": 719.67,
+      "levenshtein_normalized": 0.7642673286154333,
+      "docs": 100,
+      "chars": 86714
+    },
+    "test": {
+      "char_accuracy": 0.1773016218306625,
+      "word_accuracy": 0.0019299696719051558,
+      "precision": 0.5554404716773645,
+      "recall": 0.03999078686477131,
+      "f1": 0.016980185463780963,
+      "levenshtein_mean": 680.75,
+      "levenshtein_normalized": 0.7372155193823966,
+      "docs": 100,
+      "chars": 82746
+    }
+  },
+  "deltanet": {
+    "params": 4778163,
+    "forward_flops_per_window": 740493312,
+    "counted_matmul_flops": 731056128,
+    "analytic_extra_flops": 9437184,
+    "window_tokens": 68,
+    "best_step": 1500,
+    "best_val_loss": 2.8596714223388604,
+    "train_minutes": 1.9732265869776409,
+    "validation": {
+      "char_accuracy": 0.1686348225200083,
+      "word_accuracy": 0.0011647824597464885,
+      "precision": 0.11152199222603176,
+      "recall": 0.03792882028580338,
+      "f1": 0.012425937974545952,
+      "levenshtein_mean": 720.88,
+      "levenshtein_normalized": 0.8347464200706719,
+      "docs": 100,
+      "chars": 86714
+    },
+    "test": {
+      "char_accuracy": 0.1755855267928359,
+      "word_accuracy": 0.0012406947890818859,
+      "precision": 0.14012941531143627,
+      "recall": 0.03794919133029642,
+      "f1": 0.012867058549135628,
+      "levenshtein_mean": 682.17,
+      "levenshtein_normalized": 0.8401464448361473,
+      "docs": 100,
+      "chars": 82746
+    }
+  },
+  "hybrid": {
+    "params": 4795047,
+    "forward_flops_per_window": 706847232,
+    "counted_matmul_flops": 687244800,
+    "analytic_extra_flops": 19602432,
+    "window_tokens": 68,
+    "best_step": 1500,
+    "best_val_loss": 2.8561302666159945,
+    "train_minutes": 2.3191430966059365,
+    "validation": {
+      "char_accuracy": 0.1698572318195447,
+      "word_accuracy": 0.0014388489208633094,
+      "precision": 0.5316196928602981,
+      "recall": 0.03932340745941406,
+      "f1": 0.015252014258172297,
+      "levenshtein_mean": 719.79,
+      "levenshtein_normalized": 0.7662316349006215,
+      "docs": 100,
+      "chars": 86714
+    },
+    "test": {
+      "char_accuracy": 0.1771445145384671,
+      "word_accuracy": 0.0015853322304935208,
+      "precision": 0.5300859227101267,
+      "recall": 0.039861897215086414,
+      "f1": 0.01671621967716224,
+      "levenshtein_mean": 680.88,
+      "levenshtein_normalized": 0.7487417529358761,
+      "docs": 100,
+      "chars": 82746
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "model": "hybrid",
+  "config": {
+    "seed": 0,
+    "roll_number": "2026900003",
+    "data_root": "data/part1",
+    "heldout_path": "data/part1/heldout",
+    "max_docs": 2000,
+    "val_max_docs": 100,
+    "patch": 64,
+    "context": 4,
+    "batch_size": 16,
+    "eval_batch_size": 64,
+    "workers": 0,
+    "max_steps": 20,
+    "lr": 0.0006,
+    "warmup_steps": 500,
+    "weight_decay": 0.01,
+    "grad_clip": 1.0,
+    "label_smoothing": 0.1,
+    "amp": true,
+    "log_interval": 5,
+    "eval_interval": 10,
+    "eval_limit": 5,
+    "final_eval": true,
+    "eval_splits": [
+      "validation",
+      "test"
+    ],
+    "models": [
+      "transformer",
+      "mamba",
+      "deltanet",
+      "hybrid"
+    ],
+    "inference_model": "hybrid",
+    "model": {
+      "d_model": 256,
+      "n_layers": 6,
+      "n_heads": 4,
+      "d_ff": 1024,
+      "dropout": 0.1,
+      "d_state": 8,
+      "d_conv": 4,
+      "mamba_d_inner": 960,
+      "delta_chunk": 32
+    },
+    "hf_repo": "mdhvm/anlp-a3-part1",
+    "checkpoint_dir": "models/part1/smoke",
+    "results_dir": "results/part1/smoke",
+    "output_dir": "output/part1/smoke",
+    "eval_max_docs": 20
+  },
+  "params": 4795047,
+  "curve": [
+    {
+      "step": 5,
+      "train/loss": 3.343269067390845,
+      "train/char_accuracy": 0.03927920631706823,
+      "train/lr": 7.2e-06,
+      "train/grad_norm": 3.348079204559326,
+      "train/elapsed_min": 0.0268798828125
+    },
+    {
+      "step": 10,
+      "train/loss": 3.3392468322634072,
+      "train/char_accuracy": 0.03725332259363673,
+      "train/lr": 1.3199999999999997e-05,
+      "train/grad_norm": 3.4368844032287598,
+      "train/elapsed_min": 0.05361279646555583,
+      "val/loss": 3.328713682539383,
+      "val/char_accuracy": 0.04460093896713615,
+      "val/best_loss": 3.328713682539383
+    },
+    {
+      "step": 15,
+      "train/loss": 3.334750858793527,
+      "train/char_accuracy": 0.043122379716510284,
+      "train/lr": 1.92e-05,
+      "train/grad_norm": 3.407365083694458,
+      "train/elapsed_min": 0.08318255345026652
+    },
+    {
+      "step": 20,
+      "train/loss": 3.3132073653064165,
+      "train/char_accuracy": 0.046482146630044366,
+      "train/lr": 2.52e-05,
+      "train/grad_norm": 3.5032970905303955,
+      "train/elapsed_min": 0.10989018281300862,
+      "val/loss": 3.2935427135755706,
+      "val/char_accuracy": 0.05612462654716176,
+      "val/best_loss": 3.2935427135755706
+    }
+  ],
+  "best_step": 20,
+  "best_val_loss": 3.2935427135755706,
+  "train_minutes": 0.11302067438761393
+}

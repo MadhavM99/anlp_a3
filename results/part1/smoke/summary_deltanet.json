@@ -1,0 +1,32 @@
+{
+  "params": 4778163,
+  "forward_flops_per_window": 740493312,
+  "counted_matmul_flops": 731056128,
+  "analytic_extra_flops": 9437184,
+  "window_tokens": 68,
+  "best_step": 20,
+  "best_val_loss": 3.2988889052529036,
+  "train_minutes": 0.02935167948404948,
+  "validation": {
+    "char_accuracy": 0.04601818682832736,
+    "word_accuracy": 0.0024479804161566705,
+    "precision": 0.037270962285471075,
+    "recall": 0.036123848451931236,
+    "f1": 0.03259273310230421,
+    "levenshtein_mean": 630.6,
+    "levenshtein_normalized": 0.8956010695654516,
+    "docs": 20,
+    "chars": 14516
+  },
+  "test": {
+    "char_accuracy": 0.04330334284251335,
+    "word_accuracy": 0.0024752475247524753,
+    "precision": 0.03649865749915046,
+    "recall": 0.033183613291376986,
+    "f1": 0.03133627372496718,
+    "levenshtein_mean": 596.2,
+    "levenshtein_normalized": 0.9368497642924055,
+    "docs": 20,
+    "chars": 13671
+  }
+}
